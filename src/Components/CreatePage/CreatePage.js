@@ -33,9 +33,8 @@ function LandingPage() {
         <div className='createPage'>
             <Container className='py-5 px-5'>
                 <Row className=''>
-                    <Col lg={6}>
+                    <Col lg={6} className="mx-auto">
                         <div className=''>
-                            <img className='mobileCrPageImg mb-3 mx-auto' src={bdayCake} />
                             <Form onSubmit={(e) => handleSubmit(e)}>
                                 <Form.Group className="mb-3" controlId="event">
                                     <label>Event name</label>
@@ -74,9 +73,6 @@ function LandingPage() {
                             </Form>
 
                         </div>
-                    </Col>
-                    <Col lg={6}>
-                        <img className='desktopCrPageImg' src={bdayCake} />
                     </Col>
                 </Row>
             </Container>
