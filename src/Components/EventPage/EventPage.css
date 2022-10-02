@@ -1,0 +1,22 @@
+.mobileCrPageImg {
+    display: none;
+}
+
+.desktopCrPageImg, .mobileCrPageImg {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+    .allign {
+        text-align: center;
+    }
+
+    .mobileCrPageImg {
+        display: block;
+    }
+
+    .desktopCrPageImg {
+        display: none;
+    }
+  }

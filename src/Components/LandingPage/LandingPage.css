@@ -1,0 +1,66 @@
+
+.landingPage {
+    background-color: #F6F2FF;
+    height: auto;
+}
+
+.allign {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mobileImg {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .allign {
+        text-align: center;
+    }
+
+    .mobileImg {
+        display: block;
+    }
+
+    .desktopImg {
+        display: none;
+    }
+  }
+
+.heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #240D57;
+}
+
+.gradientHeading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.para {
+    color: #4F4F4F
+}
+
+.createButton {
+    width: 320px;
+    height: 55px;
+
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFF;
+}
