@@ -22,6 +22,34 @@ function LandingPage() {
             <>
                 <div className='heading'>{event}</div>
                 <p className='para'>Hosted by {host}</p>
+
+                <div>
+                    <div className="icon mt-4">
+                        <div className='cc'>
+                           <div className='box'>
+                            <img src={calender} className="ico"></img>
+                        </div>
+                        <div className='bb ms-3'>
+                            <p>{date}</p>
+                            <p>{time}</p>
+                        </div> 
+                        </div>
+                        <p className='mt-2'>></p>
+                    </div>
+
+                    <div className="icon mt-4">
+                        <div className='cc'>
+                           <div className='box'>
+                            <img src={location} className="ico"></img>
+                        </div>
+                        <div className='bb ms-3'>
+                            <p>{street}</p>
+                            <p>{city},{state},{postCode}</p>
+                        </div> 
+                        </div>
+                        <p className='mt-2'>></p>
+                    </div>
+                </div>
             </>
         )
     }
