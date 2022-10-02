@@ -5,7 +5,7 @@ import calender from '../Images/calender.svg';
 import location from '../Images/location.svg';
 import './EventPage.css'
 
-function LandingPage() {
+function EventPage() {
 
     const desktopImg = () => {
         return <img className='desktopCrPageImg' src={localStorage.getItem('media')} />
@@ -19,9 +19,9 @@ function LandingPage() {
         const { event, host, date, time, street, city, state, postCode } = JSON.parse(localStorage.getItem('event'));
 
         return (
-            <>
+            <div className='mt-5'>
                 <div className='heading'>{event}</div>
-                <p className='para'>Hosted by {host}</p>
+                <p className='para'>Hosted by <b>{host}</b></p>
 
                 <div>
                     <div className="icon mt-4">
@@ -50,13 +50,13 @@ function LandingPage() {
                         <p className='mt-2'>></p>
                     </div>
                 </div>
-            </>
+            </div>
         )
     }
 
 
     return (
-        <div className='createPage'>
+        <div className='eventPage'>
             <Container className='py-5 px-5'>
                 <Row className=''>
 
@@ -80,4 +80,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default EventPage

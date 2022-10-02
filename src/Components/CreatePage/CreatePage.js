@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import bdayCake from '../Images/Birthday cake.png'
 import './CreatePage.css'
 
-function LandingPage() {
+function CreatePage() {
 
     const [event, setEvent] = useState({});
 
@@ -80,4 +80,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default CreatePage
